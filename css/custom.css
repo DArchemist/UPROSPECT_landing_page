@@ -171,6 +171,16 @@ button {
     transform: scale(0.9);
 }
 
+#successful-subscribe {
+    display: none;
+
+}
+
+#fail-subscribe {
+    display: none;
+
+}
+
 /********** RWD **********/
 @media (max-width: 575px) {
     #banner h1 {

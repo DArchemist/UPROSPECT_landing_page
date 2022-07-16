@@ -8,7 +8,7 @@
     <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
     <meta property="og:title" content="UPROSPECT" />
     <meta property="og:description" content="Sales and lead generation simplified" />
-    <meta property="og:image" content="http://uprospect.co/img/logo_with_text_right.png" />
+    <meta property="og:image" content="https://uprospect.co/img/logo_with_text_right.png" />
     <!-- custom.css -->
     <link rel="stylesheet" href="css/custom.css">
     <!-- bootstrap.min.css -->
@@ -195,7 +195,9 @@
                     </p>
                 </div>
                 <div class="col-md-6">
-                    <form>
+                    <div id="successful-subscribe" class="alert alert-success">Thanks for subscribing!</div>
+                    <div id="fail-subscribe" class="alert alert-danger">Both name, and email are required.</div>
+                    <form onsubmit="sendRequest(event)">
                     	<div class="row">
 	                        <div class="form-group col-md-6">
 	                            <label for="name">Your Name</label>
@@ -203,12 +205,12 @@
 	                        </div>
 	                        <div class="form-group col-md-6">
 	                            <label for="Email">Your Email</label>
-	                            <input type="email" class="form-control" id="Email">
+	                            <input type="email" class="form-control" id="email">
 	                        </div>
 	                    </div>
                         <div class="row">
 	                        <div class="form-group col-md-6">
-	                            <label for="company">Your company</label>
+	                            <label for="company">Your Company</label>
 	                            <input type="company" class="form-control" id="company">
 	                        </div>
 	                        <div class="form-group col-md-6">
@@ -251,6 +253,7 @@
       AOS.init({
       });
     </script>
+    <script src="js/subscribeHandler.js"></script>
 </body>
 
 </html>
