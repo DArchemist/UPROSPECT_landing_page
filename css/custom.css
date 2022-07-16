@@ -172,12 +172,12 @@ button {
 }
 
 #successful-subscribe {
-    display: none;
+    display: none !important;
 
 }
 
 #fail-subscribe {
-    display: none;
+    display: none !important;
 
 }
 
