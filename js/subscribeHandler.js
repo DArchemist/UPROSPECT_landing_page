@@ -29,9 +29,9 @@ async function sendRequest(e) {
     const res = await fetch(URL, options)
     const resData = await res.json
     if (res.ok) {
-        document.getElementById('successful-subscribe').style.display = 'block !important';
+        document.getElementById('successful-subscribe').style.display = 'block';
         setTimeout(()=> {
-            document.getElementById('successful-subscribe').style.display = 'none !important';
+            document.getElementById('successful-subscribe').style.display = 'none';
         }, 5000)
         name.value = ''
         email.value = ''
@@ -40,9 +40,9 @@ async function sendRequest(e) {
     
     }
     else {
-        document.getElementById('fail-subscribe').style.display = 'block !important';
+        document.getElementById('fail-subscribe').style.display = 'block';
         setTimeout(()=> {
-            document.getElementById('fail-subscribe').style.display = 'none !important';
+            document.getElementById('fail-subscribe').style.display = 'none';
         }, 5000)
     }
 }
