@@ -1,6 +1,6 @@
 const myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
-const URL = 'https://uprospect-mailing-list.herokuapp.com/api/subscribers';
+const URL = 'https://uprospect-api.herokuapp.com/api/subscribers';
 
 async function sendRequest(e) {
     e.preventDefault()
